@@ -9,26 +9,26 @@ def merge_sort(numbers):
         merge_sort(left)
         merge_sort(right)
 
-        i = j = 0
+        l = r = 0
         k = 0
 
-        while i < len(left) and j < len(right):
-            if left[i] <= right[j]:
-                numbers[k] = left[i]
-                i += 1
+        while l < len(left) and r < len(right):
+            if left[l] <= right[r]:
+                numbers[k] = left[l]
+                l += 1
             else:
-                numbers[k] = right[j]
-                j += 1
+                numbers[k] = right[r]
+                r += 1
             k += 1
 
-        while i < len(left):
-            numbers[k] = left[i]
-            i += 1
+        while l < len(left):
+            numbers[k] = left[l]
+            l += 1
             k += 1
 
-        while j < len(right):
-            numbers[k] = right[j]
-            j += 1
+        while r < len(right):
+            numbers[k] = right[r]
+            r += 1
             k += 1
 
 
