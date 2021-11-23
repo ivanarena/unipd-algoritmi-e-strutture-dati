@@ -1,11 +1,11 @@
-numbers = [2, 3, 1, 1, 1, 2, 6, 2]
-sorted_numbers = [0, 0, 0, 0, 0, 0, 0, 0]
+# NOTE: numbers as intented to be non-negative
+
+numbers = [2, 3, 4, 1, 5, 2, 3, 2]
+sorted_numbers = [0] * len(numbers)
 
 
 def counting_sort(list, sorted_numbers, max):
-    occurrences = []
-    for i in range(max + 1):  # initialize occurrences
-        occurrences.append(0)
+    occurrences = [0] * (max + 1)  # initialize occurences
 
     for num in numbers:  # count occurrences
         occurrences[num] = occurrences[num] + 1
