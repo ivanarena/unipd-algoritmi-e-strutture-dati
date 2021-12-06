@@ -36,9 +36,7 @@ def heap_sort(numbers, start, end):
     for i in range(end, 1, -1):
         numbers[1], numbers[i] = numbers[i], numbers[1]
         end = end - 1
-        print("after swap:", numbers[1:end+2])
         max_heapify(numbers, 1, end)
-        print("heap:", numbers[1:end+1])
     numbers.pop(0)  # remove temporary node
 
 
