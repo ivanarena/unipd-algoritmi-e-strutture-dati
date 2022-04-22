@@ -4,5 +4,5 @@ Algoritmi ed esercizi del corso di Algoritmi e Strutture Dati (Informatica UniPD
 ## sorting-algorithms
 Tutti gli algoritmi di ordinamento visti a lezione realizzati in Python. 
 
-## Esercizi
+## esercizi
 Personali soluzioni agli esercizi assegnati
